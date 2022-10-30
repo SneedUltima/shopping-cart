@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+.Navbar {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 20px 20px;
+  background-color: black;
+
+  .logo {
+    button {
+      font-family: 'Carter One', cursive;
+      border: none;
+      font-size: 35px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  }
+
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+
+    button {
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      color: white;
+      background-color: black;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #links {
+      &:after {
+        position: absolute;
+        content: '';
+        background-color: rgb(40, 217, 24);
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}

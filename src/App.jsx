@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar';
+import './styles/LandingPage.css';
 
 function App() {
   return (
