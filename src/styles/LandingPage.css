@@ -3,4 +3,48 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.Hero-Section {
+  background-color: rgb(27, 27, 27);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 40px;
+  min-height: 90vh !important;
+}
+.Hero-Section .Hero-Text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 0;
+}
+.Hero-Section .Hero-Text p {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+.Hero-Section .Hero-Text p span {
+  color: rgb(40, 217, 24);
+}
+.Hero-Section .Hero-Text #second-text {
+  color: rgb(204, 203, 203);
+  font-size: 22px;
+}
+.Hero-Section .Hero-Text button {
+  width: 150px;
+  border: 2px solid rgb(40, 217, 24);
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Hero-Section .Hero-Text button:hover {
+  background-color: rgb(40, 217, 24);
 }/*# sourceMappingURL=LandingPage.css.map */

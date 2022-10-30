@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <div className="Navbar">
       <div className="logo">
-        <button>Rush</button>
+        <button>Rush Supplements</button>
       </div>
       <div id="nav">
         <button id="links">Home</button>

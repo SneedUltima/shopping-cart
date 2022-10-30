@@ -1,7 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
 
+$background-color: rgb(27, 27, 27);
+$green: rgb(40, 217, 24);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.Hero-Section {
+  background-color: $background-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 40px;
+  min-height: 90vh !important;
+
+  .Hero-Text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px 0;
+    p {
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+
+      span {
+        color: $green;
+      }
+    }
+    #second-text {
+      color: rgb(204, 203, 203);
+      font-size: 22px;
+    }
+
+    button {
+      width: 150px;
+      border: 2px solid $green;
+      background-color: $background-color;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px 10px;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $green;
+      }
+    }
+  }
 }
