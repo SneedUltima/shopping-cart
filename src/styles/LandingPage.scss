@@ -41,7 +41,7 @@ body {
 
     button {
       width: 150px;
-      border: 2px solid $green;
+      border: 3px solid $green;
       background-color: $background-color;
       color: white;
       font-weight: bold;
@@ -49,6 +49,7 @@ body {
       padding: 10px 10px;
       transition: 0.5s;
       cursor: pointer;
+      margin-top: 10px;
 
       &:hover {
         background-color: $green;
