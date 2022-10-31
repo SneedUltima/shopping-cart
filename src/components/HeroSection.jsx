@@ -1,5 +1,4 @@
 import React from 'react';
-import HeroBannerImage from '../images/HeroBanner.jpg';
 import '../styles/LandingPage.css';
 
 const HeroSection = () => {
