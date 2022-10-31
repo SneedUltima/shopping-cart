@@ -1,17 +1,25 @@
 import React from 'react';
-import NavBar from './NavBar';
 import storeItems from '../data/items.json';
 import ItemCard from './ItemCard';
+import { motion } from 'framer-motion';
 
 const Products = () => {
   return (
-    <div>
-      <NavBar />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.3,
+        easeIn: [0, 0.71, 0.2, 1.01],
+        easeOut: [0, 0.71, 0.2, 1.01],
+      }}
+    >
       {storeItems.map((item) => (
         <ItemCard key={item.id} {...item} />
       ))}
       ;
-    </div>
+    </motion.div>
   );
 };
 
