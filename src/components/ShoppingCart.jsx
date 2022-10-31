@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './NavBar';
 
-const Products = () => {
+const ShoppingCart = () => {
   return (
     <div>
       <NavBar />
@@ -9,4 +9,4 @@ const Products = () => {
   );
 };
 
-export default Products;
+export default ShoppingCart;
