@@ -1,0 +1,39 @@
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(146, 143, 143);
+  width: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5%;
+  padding: 10px 5px;
+}
+.item-card .image-container #item-image {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.item-card .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.item-card .text-container #item-title {
+  font-weight: bold;
+}
+.item-card .text-container #item-button {
+  width: 200px;
+  border: 3px solid rgb(35, 217, 151);
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-weight: bold;
+  padding: 5px 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5%;
+}
+.item-card .text-container #item-button:hover {
+  background-color: #353535;
+}/*# sourceMappingURL=ItemCard.css.map */

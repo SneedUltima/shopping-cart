@@ -1,0 +1,47 @@
+$background-color: rgb(27, 27, 27);
+$green: rgb(35, 217, 151);
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(146, 143, 143);
+  width: 275px;
+  object-fit: cover;
+  border-radius: 5%;
+  padding: 10px 5px;
+
+  .image-container {
+    #item-image {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    #item-title {
+      font-weight: bold;
+    }
+
+    #item-button {
+      width: 200px;
+      border: 3px solid $green;
+      background-color: $background-color;
+      color: white;
+      font-weight: bold;
+      padding: 5px 5px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 5%;
+
+      &:hover {
+        background-color: lighten($background-color, 10%);
+      }
+    }
+  }
+}
