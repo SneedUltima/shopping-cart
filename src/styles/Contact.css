@@ -1,0 +1,80 @@
+.grid-container {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container .social-icons {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  align-items: center;
+  justify-content: center;
+  font-size: 90px;
+  gap: 40px;
+  padding: 20px 20px;
+}
+.grid-container .social-icons .facebook,
+.grid-container .social-icons .instagram,
+.grid-container .social-icons .messenger,
+.grid-container .social-icons .twitter,
+.grid-container .social-icons .telegram,
+.grid-container .social-icons .whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.grid-container .social-icons .facebook,
+.grid-container .social-icons .messenger {
+  color: rgb(35, 35, 225);
+}
+.grid-container .social-icons .facebook:hover,
+.grid-container .social-icons .messenger:hover {
+  color: #3939e4;
+}
+.grid-container .social-icons .instagram {
+  color: rgb(173, 57, 77);
+}
+.grid-container .social-icons .instagram:hover {
+  color: #c04056;
+}
+.grid-container .social-icons .twitter {
+  color: rgb(49, 162, 185);
+}
+.grid-container .social-icons .twitter:hover {
+  color: #39b2cb;
+}
+.grid-container .social-icons .telegram {
+  color: rgb(38, 161, 202);
+}
+.grid-container .social-icons .telegram:hover {
+  color: #31afd8;
+}
+.grid-container .social-icons .whatsapp {
+  color: rgb(42, 189, 42);
+}
+.grid-container .social-icons .whatsapp:hover {
+  color: #30d130;
+}
+
+.custom-shape-divider-bottom-1667286061 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1667286061 svg {
+  position: relative;
+  display: block;
+  width: calc(253% + 1.3px);
+  height: 308px;
+}
+
+.custom-shape-divider-bottom-1667286061 .shape-fill {
+  fill: #60d863;
+}/*# sourceMappingURL=Contact.css.map */

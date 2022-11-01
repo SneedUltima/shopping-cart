@@ -1,0 +1,86 @@
+.grid-container {
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .social-icons {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+    gap: 40px;
+    padding: 20px 20px;
+
+    .facebook,
+    .instagram,
+    .messenger,
+    .twitter,
+    .telegram,
+    .whatsapp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .facebook,
+    .messenger {
+      color: rgb(35, 35, 225);
+      &:hover {
+        color: lighten(rgb(35, 35, 225), 5%);
+      }
+    }
+
+    .instagram {
+      color: rgb(173, 57, 77);
+      &:hover {
+        color: lighten(rgb(173, 57, 77), 5%);
+      }
+    }
+
+    .twitter {
+      color: rgb(49, 162, 185);
+      &:hover {
+        color: lighten(rgb(49, 162, 185), 5%);
+      }
+    }
+
+    .telegram {
+      color: rgb(38, 161, 202);
+      &:hover {
+        color: lighten(rgb(38, 161, 202), 5%);
+      }
+    }
+
+    .whatsapp {
+      color: rgb(42, 189, 42);
+      &:hover {
+        color: lighten(rgb(42, 189, 42), 5%);
+      }
+    }
+  }
+}
+
+.custom-shape-divider-bottom-1667286061 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1667286061 svg {
+  position: relative;
+  display: block;
+  width: calc(253% + 1.3px);
+  height: 308px;
+}
+
+.custom-shape-divider-bottom-1667286061 .shape-fill {
+  fill: #60d863;
+}
