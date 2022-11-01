@@ -2,10 +2,12 @@ import React from 'react';
 import storeItems from '../data/items.json';
 import ItemCard from './ItemCard';
 import { motion } from 'framer-motion';
+import '../styles/Products.css';
 
 const Products = () => {
   return (
     <motion.div
+      className="product-display"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{

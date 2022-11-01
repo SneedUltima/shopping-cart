@@ -1,12 +1,13 @@
 $background-color: rgb(27, 27, 27);
-$green: rgb(35, 217, 151);
+$green: rgb(40, 217, 24);
 
 .item-card {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(146, 143, 143);
+  border: 1px solid rgb(210, 209, 209);
   width: 275px;
   object-fit: cover;
   border-radius: 5%;

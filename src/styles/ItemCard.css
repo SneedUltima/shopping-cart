@@ -1,9 +1,10 @@
 .item-card {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(146, 143, 143);
+  border: 1px solid rgb(210, 209, 209);
   width: 275px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -25,7 +26,7 @@
 }
 .item-card .text-container #item-button {
   width: 200px;
-  border: 3px solid rgb(35, 217, 151);
+  border: 3px solid rgb(40, 217, 24);
   background-color: rgb(27, 27, 27);
   color: white;
   font-weight: bold;
