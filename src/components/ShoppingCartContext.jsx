@@ -1,9 +1,11 @@
 import React, { createContext, useContext } from 'react';
 
-const ShoppingCartContext = createContext([]);
+const ShoppingCartContext = createContext();
 
 export function ShoppingCartProvider({ children }) {
-  return <ShoppingCartProvider>{children}</ShoppingCartProvider>;
+  return (
+    <ShoppingCartContext.Provider>{children}</ShoppingCartContext.Provider>
+  );
 }
 
 export default ShoppingCartContext;

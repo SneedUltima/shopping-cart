@@ -9,15 +9,17 @@ import NavBar from './components/NavBar';
 
 const RouteSwitch = () => {
   return (
-    <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/shopping-cart" element={<ShoppingCart />} />
-      </Routes>
-    </BrowserRouter>
+    <ShoppingCartProvider>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/shopping-cart" element={<ShoppingCart />} />
+        </Routes>
+      </BrowserRouter>
+    </ShoppingCartProvider>
   );
 };
 
