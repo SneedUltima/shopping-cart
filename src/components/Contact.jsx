@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faInstagram,
@@ -13,17 +12,7 @@ import '../styles/Contact.css';
 
 const Contact = () => {
   return (
-    <motion.div
-      className="grid-container"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{
-        duration: 0.8,
-        delay: 0.3,
-        easeIn: [0, 0.71, 0.2, 1.01],
-        easeOut: [0, 0.71, 0.2, 1.01],
-      }}
-    >
+    <div className="grid-container">
       <h1>Reach out with our socials!</h1>
       <div className="social-icons">
         <div className="instagram">
@@ -68,7 +57,7 @@ const Contact = () => {
           ></path>
         </svg>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
