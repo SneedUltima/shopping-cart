@@ -3,8 +3,15 @@ import '../styles/ShoppingCart.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
+import { useContext } from 'react';
+import ShoppingCartContext from './ShoppingCartContext';
 
 const ShoppingCart = ({ isOpen, onClose }) => {
+  const { items } = useContext(ShoppingCartContext);
+
+  const cartLength =
+    items.length > 0 ? items.length : <h3>Your Cart is Empty!</h3>;
+
   if (!isOpen) return null;
   return (
     <motion.div
@@ -22,9 +29,7 @@ const ShoppingCart = ({ isOpen, onClose }) => {
       <div className="Shopping-Cart-Header">
         <h1>Shopping Cart</h1>
       </div>
-      <div className="Shopping-Cart-Content">
-        <h3>Your Cart is Empty!</h3>
-      </div>
+      <div className="Shopping-Cart-Content">{cartLength}</div>
       <div className="Shopping-Cart-Checkout">
         <button onClick={onClose} id="checkout-button">
           Checkout
