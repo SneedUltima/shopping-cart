@@ -40,7 +40,9 @@ const NavBar = () => {
               onClick={() => setIsOpen(true)}
             />
           </button>
-          <p id="cart-number">{cartTotal}</p>
+          <button id="cart-number" onClick={() => setIsOpen(true)}>
+            {cartTotal}
+          </button>
         </div>
         <ShoppingCart
           isOpen={isOpen}

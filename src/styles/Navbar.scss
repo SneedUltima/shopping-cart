@@ -40,8 +40,11 @@ $green: rgb(40, 217, 24);
         justify-content: center;
         color: black;
         background-color: $green;
+        border: none;
         border-radius: 60%;
-        width: 27px;
+        width: 30px;
+        height: 28px;
+        font-size: 20px;
         font-weight: bold;
       }
     }

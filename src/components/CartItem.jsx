@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import ShoppingCartContext from './ShoppingCartContext';
 
 const CartItem = ({ name, imgUrl, id, price, qty }) => {
-  const { addToCart } = useContext(ShoppingCartContext);
+  const { addToCart, removeFromCart } = useContext(ShoppingCartContext);
 
   return (
     <div className="cart-item-container">
@@ -13,9 +13,9 @@ const CartItem = ({ name, imgUrl, id, price, qty }) => {
       </div>
       <div className="product-info-container">
         <h3>{name}</h3>
-        <p>{(price * qty).toFixed(2)}</p>
+        <p>${(price * qty).toFixed(2)}</p>
         <div className="quantity-buttons">
-          <button>-</button>
+          <button onClick={() => removeFromCart(id)}>-</button>
           <p>{qty}</p>
           <button onClick={() => addToCart(id)}>+</button>
         </div>
