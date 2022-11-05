@@ -10,6 +10,10 @@ import CartItem from './CartItem';
 const ShoppingCart = ({ isOpen, onClose }) => {
   const { items } = useContext(ShoppingCartContext);
 
+  const total = items.reduce((accumulator, item) => {
+    return accumulator + item.qty * item.price;
+  }, 0);
+
   if (!isOpen) return null;
   return (
     <motion.div
@@ -37,7 +41,7 @@ const ShoppingCart = ({ isOpen, onClose }) => {
         <h3>Your Cart is Empty!</h3>
       )}
       <div className="Shopping-Cart-Checkout">
-        <p>TOTAL</p>
+        <p id="total">Your Total: ${total.toFixed(2)}</p>
         <button onClick={onClose} id="checkout-button">
           Checkout
         </button>
