@@ -13,6 +13,10 @@ const NavBar = () => {
 
   const navigate = useNavigate();
 
+  const cartTotal = items.reduce((accumulator, item) => {
+    return accumulator + item.qty;
+  }, 0);
+
   return (
     <div className="Navbar">
       <div className="logo">
@@ -36,7 +40,7 @@ const NavBar = () => {
               onClick={() => setIsOpen(true)}
             />
           </button>
-          <p id="cart-number">{items.length}</p>
+          <p id="cart-number">{cartTotal}</p>
         </div>
         <ShoppingCart
           isOpen={isOpen}
