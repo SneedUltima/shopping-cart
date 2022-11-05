@@ -1,5 +1,6 @@
 .cart-item-container {
   display: flex;
+  align-items: center;
 
   .image-container {
     #product-image {
@@ -11,6 +12,22 @@
   .product-info-container {
     .quantity-buttons {
       display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 20px;
+      font-weight: bold;
+
+      #quantity {
+        border: 1px solid rgb(198, 198, 198);
+        padding: 2px 20px;
+      }
+
+      #quantity-button {
+        padding: 5px 5px;
+        background-color: white;
+        color: black;
+        font-size: 30px;
+      }
     }
   }
 }

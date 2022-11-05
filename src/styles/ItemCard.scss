@@ -41,7 +41,9 @@ $green: rgb(40, 217, 24);
       border-radius: 5%;
 
       &:hover {
-        background-color: lighten($background-color, 10%);
+        color: black;
+        background-color: $green;
+        transition: 0.5s;
       }
     }
   }

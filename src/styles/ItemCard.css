@@ -36,5 +36,7 @@
   border-radius: 5%;
 }
 .item-card .text-container #item-button:hover {
-  background-color: #353535;
+  color: black;
+  background-color: rgb(40, 217, 24);
+  transition: 0.5s;
 }/*# sourceMappingURL=ItemCard.css.map */

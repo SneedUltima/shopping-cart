@@ -15,9 +15,13 @@ const CartItem = ({ name, imgUrl, id, price, qty }) => {
         <h3>{name}</h3>
         <p>${(price * qty).toFixed(2)}</p>
         <div className="quantity-buttons">
-          <button onClick={() => removeFromCart(id)}>-</button>
-          <p>{qty}</p>
-          <button onClick={() => addToCart(id)}>+</button>
+          <button id="quantity-button" onClick={() => removeFromCart(id)}>
+            -
+          </button>
+          <p id="quantity">{qty}</p>
+          <button id="quantity-button" onClick={() => addToCart(id)}>
+            +
+          </button>
         </div>
       </div>
     </div>

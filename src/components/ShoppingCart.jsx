@@ -38,10 +38,10 @@ const ShoppingCart = ({ isOpen, onClose }) => {
           ))}
         </div>
       ) : (
-        <h3>Your Cart is Empty!</h3>
+        <h3 id="empty">Your Cart is Empty!</h3>
       )}
       <div className="Shopping-Cart-Checkout">
-        <p id="total">Your Total: ${total.toFixed(2)}</p>
+        <p id="total">Order Total: ${total.toFixed(2)}</p>
         <button onClick={onClose} id="checkout-button">
           Checkout
         </button>
