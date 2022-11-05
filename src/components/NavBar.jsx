@@ -1,13 +1,15 @@
 import React from 'react';
 import '../styles/Navbar.css';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import ShoppingCart from './ShoppingCart';
+import ShoppingCartContext from './ShoppingCartContext';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { items } = useContext(ShoppingCartContext);
 
   const navigate = useNavigate();
 
@@ -26,12 +28,16 @@ const NavBar = () => {
         <button id="links" onClick={() => navigate('/contact')}>
           Contact Us
         </button>
-        <button>
-          <FontAwesomeIcon
-            icon={faShoppingCart}
-            onClick={() => setIsOpen(true)}
-          />
-        </button>
+        <div className="cart-icon">
+          <button>
+            <FontAwesomeIcon
+              id="cart-icon"
+              icon={faShoppingCart}
+              onClick={() => setIsOpen(true)}
+            />
+          </button>
+          <p id="cart-number">{items.length}</p>
+        </div>
         <ShoppingCart
           isOpen={isOpen}
           onClose={() => setIsOpen(false)}

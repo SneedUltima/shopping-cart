@@ -21,6 +21,24 @@
   justify-content: center;
   gap: 5vw;
 }
+.Navbar #nav .cart-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+.Navbar #nav .cart-icon #cart-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: rgb(40, 217, 24);
+  padding: 1px 10px;
+  border-radius: 60%;
+  width: 27px;
+  font-weight: bold;
+}
 .Navbar #nav button {
   position: relative;
   font-family: "Poppins", sans-serif;
