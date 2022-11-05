@@ -1,0 +1,16 @@
+.cart-item-container {
+  display: flex;
+
+  .image-container {
+    #product-image {
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  .product-info-container {
+    .quantity-buttons {
+      display: flex;
+    }
+  }
+}

@@ -1,7 +1,10 @@
 import React from 'react';
 import '../styles/LandingPage.css';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="Hero-Section">
       <div className="Hero-Text">
@@ -10,7 +13,9 @@ const HeroSection = () => {
           the <span>cheapest</span> value
         </p>
         <p id="second-text">Explore our range today!</p>
-        <button id="shop-button">Shop Now!</button>
+        <button id="shop-button" onClick={() => navigate('/products')}>
+          Shop Now!
+        </button>
       </div>
       <div className="Hero-Image">
         <p>Image</p>

@@ -1,0 +1,11 @@
+.cart-item-container {
+  display: flex;
+}
+.cart-item-container .image-container #product-image {
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cart-item-container .product-info-container .quantity-buttons {
+  display: flex;
+}/*# sourceMappingURL=CartItem.css.map */

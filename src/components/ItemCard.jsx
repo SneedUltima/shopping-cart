@@ -3,7 +3,7 @@ import '../styles/ItemCard.css';
 import { useContext } from 'react';
 import ShoppingCartContext from './ShoppingCartContext';
 
-const ItemCard = ({ id, name, price, imgUrl }) => {
+const ItemCard = ({ id, name, price, imgUrl, qty }) => {
   const { addToCart } = useContext(ShoppingCartContext);
 
   return (
@@ -14,7 +14,10 @@ const ItemCard = ({ id, name, price, imgUrl }) => {
       <div className="text-container">
         <p id="item-title">{name}</p>
         <p id="item-price">${price}</p>
-        <button id="item-button" onClick={() => addToCart(id, name, price)}>
+        <button
+          id="item-button"
+          onClick={() => addToCart(id, name, price, imgUrl, qty)}
+        >
           Add to Cart
         </button>
       </div>

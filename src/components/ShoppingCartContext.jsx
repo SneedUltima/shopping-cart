@@ -5,8 +5,19 @@ const ShoppingCartContext = createContext();
 export function ShoppingCartProvider({ children }) {
   const [items, setItems] = useState([]);
 
-  const addToCart = (id, name, price) => {
-    setItems((prevState) => [...prevState, { id, name, price }]);
+  const addToCart = (id, name, price, imgUrl, qty) => {
+    const exist = items.find((item) => item.id === id);
+    if (exist) {
+      const newItems = items.map((item) =>
+        item.id === id ? { ...exist, qty: exist.qty + 1 } : item
+      );
+      setItems(newItems);
+    } else {
+      setItems((prevState) => [
+        ...prevState,
+        { id, name, price, imgUrl, qty: qty + 1 },
+      ]);
+    }
   };
 
   return (

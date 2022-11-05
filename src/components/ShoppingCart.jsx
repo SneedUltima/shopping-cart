@@ -5,12 +5,10 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { motion } from 'framer-motion';
 import { useContext } from 'react';
 import ShoppingCartContext from './ShoppingCartContext';
+import CartItem from './CartItem';
 
 const ShoppingCart = ({ isOpen, onClose }) => {
   const { items } = useContext(ShoppingCartContext);
-
-  const cartLength =
-    items.length > 0 ? items.length : <h3>Your Cart is Empty!</h3>;
 
   if (!isOpen) return null;
   return (
@@ -29,7 +27,15 @@ const ShoppingCart = ({ isOpen, onClose }) => {
       <div className="Shopping-Cart-Header">
         <h1>Shopping Cart</h1>
       </div>
-      <div className="Shopping-Cart-Content">{cartLength}</div>
+      {items.length > 0 ? (
+        <div className="Shopping-Cart-Content">
+          {items.map((item) => (
+            <CartItem key={item.id} {...item} />
+          ))}
+        </div>
+      ) : (
+        <h3>Your Cart is Empty!</h3>
+      )}
       <div className="Shopping-Cart-Checkout">
         <button onClick={onClose} id="checkout-button">
           Checkout
