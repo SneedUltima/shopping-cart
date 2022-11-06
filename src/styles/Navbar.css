@@ -63,4 +63,28 @@
 }
 .Navbar #nav #links:hover:after {
   width: 100%;
+}
+
+@media (max-width: 500px) {
+  .Navbar {
+    padding: 20px 15px;
+    grid-template-columns: 0.5fr 1fr;
+  }
+  .Navbar .logo button {
+    font-size: 15px;
+  }
+  .Navbar #nav {
+    gap: 15px;
+  }
+  .Navbar #nav .cart-icon {
+    gap: 5px;
+  }
+  .Navbar #nav .cart-icon #cart-number {
+    width: 15px;
+    height: 14px;
+    font-size: 10px;
+  }
+  .Navbar #nav button {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

@@ -20,6 +20,10 @@
   color: black;
   font-size: 40px;
 }
+.Shopping-Cart-Container .close #close-button:hover {
+  color: rgb(203, 33, 33);
+  transition: 0.3s;
+}
 .Shopping-Cart-Container #empty {
   margin: 30px 0px;
   font-size: 30px;
@@ -38,4 +42,21 @@
 .Shopping-Cart-Container .Shopping-Cart-Checkout #checkout-button:hover {
   background-color: rgb(51, 172, 14);
   transition: 0.5s;
+}
+
+@media (max-width: 500px) {
+  .Shopping-Cart-Container {
+    left: 30%;
+    width: 70vw;
+  }
+  .Shopping-Cart-Container .Shopping-Cart-Checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .Shopping-Cart-Container .Shopping-Cart-Checkout #total {
+    margin-top: 20px;
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=ShoppingCart.css.map */

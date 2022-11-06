@@ -4,4 +4,14 @@
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 30px;
   padding: 30px 40px 30px 40px;
+}
+
+@media (max-width: 500px) {
+  .product-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 30px 30px;
+  }
 }/*# sourceMappingURL=Products.css.map */

@@ -23,4 +23,18 @@
   background-color: white;
   color: black;
   font-size: 30px;
+}
+
+@media (max-width: 500px) {
+  .cart-item-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart-item-container .product-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=CartItem.css.map */

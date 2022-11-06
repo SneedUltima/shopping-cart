@@ -19,6 +19,11 @@
       background-color: white;
       color: black;
       font-size: 40px;
+
+      &:hover {
+        color: rgb(203, 33, 33);
+        transition: 0.3s;
+      }
     }
   }
 
@@ -43,6 +48,26 @@
       &:hover {
         background-color: rgb(51, 172, 14);
         transition: 0.5s;
+      }
+    }
+  }
+}
+
+// Media Queries
+@media (max-width: 500px) {
+  .Shopping-Cart-Container {
+    left: 30%;
+    width: 70vw;
+
+    .Shopping-Cart-Checkout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      #total {
+        margin-top: 20px;
+        font-size: 24px;
       }
     }
   }

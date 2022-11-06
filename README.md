@@ -1,3 +1,1 @@
-MEDIA QUERIES
-BUILD
-README
+Fake store front with shopping cart functionality built in conjunction with The Odin Project using React Js and Sass CSS. Purpose of project was to gain experience using React Routing, React Context API and Framer Motion Animation.

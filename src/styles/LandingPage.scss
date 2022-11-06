@@ -72,3 +72,17 @@ body {
     }
   }
 }
+
+// Media Queries
+@media (max-width: 500px) {
+  .Hero-Section {
+    display: flex;
+    flex-direction: column;
+
+    .Hero-Image {
+      #hero-image {
+        display: none;
+      }
+    }
+  }
+}

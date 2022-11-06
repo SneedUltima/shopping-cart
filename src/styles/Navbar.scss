@@ -78,3 +78,34 @@ $green: rgb(40, 217, 24);
     }
   }
 }
+
+// Media Queries
+@media (max-width: 500px) {
+  .Navbar {
+    padding: 20px 15px;
+    grid-template-columns: 0.5fr 1fr;
+
+    .logo {
+      button {
+        font-size: 15px;
+      }
+    }
+
+    #nav {
+      gap: 15px;
+
+      .cart-icon {
+        gap: 5px;
+        #cart-number {
+          width: 15px;
+          height: 14px;
+          font-size: 10px;
+        }
+      }
+
+      button {
+        font-size: 12px;
+      }
+    }
+  }
+}

@@ -77,4 +77,18 @@
 
 .custom-shape-divider-bottom-1667286061 .shape-fill {
   fill: #60d863;
+}
+
+@media (max-width: 500px) {
+  .grid-container h1 {
+    font-size: 22px;
+  }
+  .grid-container .social-icons {
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .custom-shape-divider-bottom-1667286061 svg {
+    height: 208px;
+  }
 }/*# sourceMappingURL=Contact.css.map */
