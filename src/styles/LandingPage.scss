@@ -19,6 +19,7 @@ body {
   grid-template-columns: 1fr 1fr;
   padding: 0 40px;
   min-height: 90vh !important;
+  gap: 20px;
 
   .Hero-Text {
     display: flex;
@@ -54,6 +55,20 @@ body {
       &:hover {
         background-color: $green;
       }
+    }
+  }
+
+  .Hero-Image {
+    display: flex;
+
+    #hero-image {
+      margin-top: 50px;
+      width: 50vw;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 5%;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+        rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
   }
 }

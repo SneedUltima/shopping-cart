@@ -18,7 +18,11 @@ const HeroSection = () => {
         </button>
       </div>
       <div className="Hero-Image">
-        <p>Image</p>
+        <img
+          src="/images/Supplements.jpg"
+          alt="Supplements Banner"
+          id="hero-image"
+        />
       </div>
     </div>
   );
